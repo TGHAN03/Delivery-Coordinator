@@ -1,0 +1,496 @@
+@font-face {
+    font-family: coolvetica;
+    src: url('coolvetica condensed rg.otf');
+}
+
+.error-message {
+    color: rgb(228, 0, 0);
+    text-align: center;
+    margin: 20px 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.dark-mode {
+    background-color: #474747; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+.dark-mode .inputbox,
+.dark-mode .inputbox2 {
+    background-color: #121212; /* Darker elements */
+    color: #e0e0e0; /* Light text */
+    border-color: #444; /* Darker borders */
+}
+
+.dark-mode .transaction-table {
+    background-color: #12121200; /* Darker elements */
+    color: #e0e0e0; /* Light text */
+    border-color: #444; /* Darker borders */
+}
+
+.dark-mode .transaction-results {
+    background-color: #12121200; /* Darker elements */
+    color: #e0e0e0; /* Light text */
+    border-color: #444; /* Darker borders */
+}
+
+.dark-mode .header-item,
+.dark-mode .row-item,
+.dark-mode .header-item2,
+.dark-mode .row-item2 {
+    border-bottom-color: #555; /* Adjust for visibility in dark mode */
+}
+
+.dark-mode .edit-mode {
+    background-color: #949494;
+    color: black;
+}
+
+
+
+
+@media only screen and (min-width: 1300px) {
+
+    #toggleDarkMode {
+        padding: 5px 20px 3px;
+        border-radius: 5px;
+        border-style: hidden;
+        background-color: #121212;
+        color: white;
+        font-size: 37px;
+        margin: 0px 10px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        min-height: 100vh; /* Ensure it fills at least the whole viewport height */
+        margin: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .content-wrapper {
+        flex: 1; /* Makes the content wrapper expand to fill available space, pushing the export section to the bottom */
+    }
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-family: coolvetica;
+        letter-spacing: 1px;
+        font-size: 64px;
+        margin: 20px;
+        color: rgb(228, 0, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    h2 {
+        align-items: center;
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .orderForm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .inputbox {
+        padding:  10px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #f8f9f9;
+    }
+
+    .inputbox2 {
+        padding:  10px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #0000003d;
+        margin: 10px 0 0 0;
+        font-weight: bold;
+    }
+
+
+
+    .orders-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .transaction-table {
+        display: table;
+        width: 50%;
+        padding: 40px 0 91px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .transaction-header {
+        display: table-row;
+        font-size: 14px;
+    } 
+
+    .transaction-row {
+        display: table-row;
+        font-size: 20px;
+    }
+
+
+    .transaction-row-line {
+        display: table-row;
+        font-size: 20px;
+    }
+
+    .header-item, .row-item {
+        display: table-cell;
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-item-centered {
+        text-align: center;
+    }
+
+    .header-item-right, .row-item-right {
+        text-align: right;
+    }
+
+    .edit-mode {
+        background-color: #ffffcc; /* Slightly yellow background */
+    }
+
+    .orders-container p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .results-container {
+        width: 100%;
+        background-color: #0000003b;
+    }
+
+    .transaction-results {
+        margin: 0;
+        padding: 25px 0 40px;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .transaction-header2 {
+        display: table-row;
+        font-size: 14px;
+    } 
+
+    .transaction-row2 {
+        display: table-row;
+        font-size: 20px;
+
+    }
+
+    .header-item2 {
+        display: table-cell;
+        padding: 8px 51px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .row-item2 {
+        display: table-cell;
+        padding: 8px 22px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .header-item-centered2 {
+        text-align: center;
+    }
+
+    .special-bike-row {
+        /* Gold background for example */
+        color: #000; /* Black text for contrast */
+    }
+
+    /* You might also want to differentiate the header item for consistency */
+    .header-item-special {
+        background-color: #FFD700; /* Matching header background */
+        color: #000; /* Matching header text color */
+    }
+
+    .export-bg {
+        background-color: #000000b3; /* Your preferred background color */
+        text-align: center; /* Center the content */
+        padding: 0; /* Add some padding */
+    }
+
+    .export-container {
+        display: inline-block; /* Make the container inline for centering */
+        list-style: none;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .export {
+        padding: 15px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0px;
+        background-color: #00b938; /* Adjust the background color as needed */
+        color: white; /* Text color */
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (max-width: 1299px) {
+
+    #toggleDarkMode {
+        padding: 5px 15px 3px;
+        border-radius: 5px;
+        border-style: hidden;
+        background-color: #121212;
+        color: white;
+        font-size: 24px;
+        margin: 0px 10px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        min-height: 100vh; /* Ensure it fills at least the whole viewport height */
+        margin: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .content-wrapper {
+        flex: 1; /* Makes the content wrapper expand to fill available space, pushing the export section to the bottom */
+    }
+
+    h1 {
+        align-items: center;
+        text-align: center;
+        font-family: coolvetica;
+        letter-spacing: 1px;
+        font-size: 42px;
+        margin: 15px;
+        color: rgb(228, 0, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    h2 {
+        align-items: center;
+        text-align: center;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .orderForm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .inputbox {
+        padding:  10px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #f8f9f9;
+        width: 80vw;
+    }
+
+    .inputbox2 {
+        padding:  10px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        background-color: #0000003d;
+        margin: 10px 0 0 0;
+        font-weight: bold;
+    }
+
+
+
+    .orders-container {
+        text-align: center;
+    }
+
+    .transaction-table {
+        display: table;
+        width: 85%;
+        padding: 40px 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .transaction-header {
+        display: table-row;
+        font-size: 14px;
+    } 
+
+    .transaction-row {
+        display: table-row;
+        font-size: 16px;
+    }
+
+
+    .transaction-row-line {
+        display: table-row;
+        font-size: 16px;
+    }
+
+    .header-item, .row-item {
+        display: table-cell;
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-item-centered {
+        text-align: center;
+    }
+
+    .header-item-right, .row-item-right {
+        text-align: right;
+    }
+
+    .edit-mode {
+        background-color: #ffffcc; /* Slightly yellow background */
+    }
+
+    .orders-container p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .results-container {
+        width: 100%;
+        background-color: #0000003b;
+        bottom: 0;
+        position: relative;
+    }
+
+    .transaction-results {
+        padding: 25px 0 40px;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .transaction-header2 {
+        display: table-row;
+        font-size: 12px;
+    } 
+
+    .transaction-row2 {
+        display: table-row;
+        font-size: 18px;
+    }
+
+    .header-item2 {
+        display: table-cell;
+        padding: 8px 10px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .row-item2 {
+        display: table-cell;
+        padding: 8px 5px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .header-item-centered2 {
+        text-align: center;
+    }
+
+    .special-bike-row {
+        /* Gold background for example */
+        color: #000; /* Black text for contrast */
+    }
+
+    /* You might also want to differentiate the header item for consistency */
+    .header-item-special {
+        background-color: #FFD700; /* Matching header background */
+        color: #000; /* Matching header text color */
+    }
+
+    .export-bg {
+        background-color: #000000b3; /* Your preferred background color */
+        text-align: center; /* Center the content */
+        padding: 0; /* Add some padding */
+    }
+
+    .export-container {
+        display: inline-block; /* Make the container inline for centering */
+        list-style: none;
+        padding: 5px;
+        margin: 9px;
+    }
+
+    .export {
+        padding: 15px 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0px;
+        background-color: #00b938; /* Adjust the background color as needed */
+        color: white; /* Text color */
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
